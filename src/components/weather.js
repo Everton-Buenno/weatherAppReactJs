@@ -20,7 +20,7 @@ function Weather() {
         setCity(e.target.value)
     }
 
-    const url = [`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br`]
+    const url = [`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br/`]
 
 
 
