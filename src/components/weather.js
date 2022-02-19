@@ -20,7 +20,7 @@ function Weather() {
         setCity(e.target.value)
     }
 
-    const url = [`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br/`]
+    const url = [`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=pt_br&/`]
 
 
 
@@ -48,7 +48,7 @@ function Weather() {
 
 
     return (
-        <div className='weather-app'>
+        <form className='weather-app' onSubmit={(e) => { e.preventDefault() }}>
             <div className='weather-title'>
                 <h1>Weather App  </h1>
 
@@ -89,7 +89,7 @@ function Weather() {
                             </div>
                             <div className='max-min-weather'>
                                 <div className='max'>
-                                    <p className='high'>High:</p>
+                                    <p className='high'>Max:</p>
                                     <p> {Math.round(weatherForecast.main.temp_max)}°C </p>
 
                                 </div>
@@ -97,7 +97,7 @@ function Weather() {
                                 <div className='min'>
 
 
-                                    <p className='low'>Low:</p>
+                                    <p className='low'>Min:</p>
                                     <p> {Math.round(weatherForecast.main.temp_min)}°C </p>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ function Weather() {
             }
 
 
-        </div>
+        </form>
 
     )
 

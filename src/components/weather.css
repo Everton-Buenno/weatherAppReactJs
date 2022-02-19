@@ -2,7 +2,7 @@
 body{
     background-color: #F4EDED;
     margin: 0 auto;
-    min-width: 500px;
+    min-width: 350px;
 }
 .weather-app{
     max-width: 1800px;
@@ -205,7 +205,7 @@ body{
     }
 
     .city-name h1{
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .main-temp h1 {
